@@ -1,0 +1,48 @@
+import java.lang.*;
+
+public class test
+{
+	public static void main(String[] args)
+	{
+		Circle test = new Circle();
+
+		test.setRadius(5);
+		test.setCentre(7.7f , 8f);
+
+		System.out.println("Radius: "+ test.getRadius() );
+		System.out.println("Centre is: "+ test.getX() +" , "+ test.getY() +"\n");
+	}
+}
+
+class Circle
+{
+	double r;
+	float x;
+	float y;
+
+	void setRadius(double radius)
+	{
+		r = radius;
+	}
+
+	double getRadius()
+	{
+		return r;
+	}
+
+	void setCentre(float a,float b)
+	{
+		x = a;
+		y = b;
+	}
+
+	float getX()
+	{
+		return x;
+	}
+
+	float getY()
+	{
+		return y;
+	}
+}
